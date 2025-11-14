@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@200..700&display=swap');
+
+
+
+:root {
+    --primary-bak-color: #fcfcfc;
+    --scondray-bak-color: #dfdceb;
+    --primary-fnt-color: #101010;
+    --scondray-fnt-color: #4f35c5;
+    --other-fnt-color: #fcfcfc;
+    --gray-t: rgba(128, 128, 128, 0.603);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: var(--primary-fnt-color);
+    text-decoration: none;
+    list-style-type: none;
+    text-transform: capitalize;
+    font-family: "Stack Sans Headline", sans-serif;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding-block: 4vh;
+    
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+nav h1 {
+    color: var(--scondray-fnt-color);
+    text-transform: lowercase;
+    font-size: 16px;
+}
+
+.singup {
+    background-color: var(--scondray-fnt-color);
+    color: var(--other-fnt-color);
+    padding-inline: 1vw;
+    padding-block: 1vh;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px --primary-fnt-color;
+}
+
+/* =================finish the navbra===================== */
+
+.grandparent1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 2.8em;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+img[src="./Public/images/Data extraction-bro.svg"] {
+    width: 55%;
+}
+
+.btn {
+    border: none;
+    border-radius: 0;
+    padding-inline: 3vw;
+}
+
+/* ====================icons================== */
+.carouse {
+    margin: 2vh auto;
+    width: 80%;
+    overflow-x: auto;
+    display: flex;
+}
+
+.group {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    animation: spain 5s infinite linear;
+    padding-right: 1em;
+
+}
+
+.icons {
+    flex: 0 0 5em;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.icons svg {
+    width: 4vw;
+    fill: var(--gray-t);
+}
+
+.icons a {
+    font-size: x-large;
+    color: var(--gray-t);
+}
+
+@keyframes spain {
+    from {
+        translate: 0;
+    }
+
+    to {
+        translate: -100%;
+    }
+}
+
+/* ====== I'm finish the page own======== */
+.grandparent2 {
+    margin-top: 15vh;
+    background-color: var(--scondray-bak-color);
+    padding-block: 10%;
+    
+}
+
+.grandparent2 section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sentnce {
+    text-align: center;
+    width: 65%;
+}
+
+/* ======== sconde parte in page 2============= */
+
+.icon {
+    width: 50px;
+    height: 50px;
+    clip-path: circle();
+    background-color: var(--gray-t);
+    display: flex;
+    justify-content: center;
+}
+
+.icon svg {
+    width: 30px;
+    fill: var(--scondray-fnt-color);
+}
+
+.container_parent {
+    margin-top: 8%;
+    padding-inline: 10vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2vw 2vh
+}
+
+.container_parent p {
+    text-align: center;
+}
+
+/* I'm finish the page 2 */
+
+.grandparent3 {
+    padding-block: 8%;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container_image {
+    width: 30vw;
+    height: 35vh;
+    background-image: linear-gradient(to left bottom, var(--gray-t) 30%, var(--scondray-bak-color) 65%);
+}
+
+.container_parent2 {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    justify-content: center;
+    padding-inline: 20%;
+    padding-block: 5%;
+    row-gap: 10vh;
+    column-gap: 5vw;
+}
+
+.card2 h3 {
+    line-height: 2.4em;
+}
+
+/* ===============i'm finish the page 3 ===================== */
+
+.grandparent4 {
+    background-color: var(--scondray-fnt-color);
+    padding-block: 5%;
+}
+
+.grandparent4 h2+p {
+    font-size: 16px;
+    font-weight: 100;
+    color: var(--other-fnt-color);
+}
+
+
+
+/* ====== sconde parte in page ================== */
+
+.progres {
+    display: flex;
+    gap: 12vw;
+    padding-block: 5vh;
+}
+
+.num {
+    font-size: 45px;
+    font-weight: 900;
+    color: var(--other-fnt-color);
+
+}
+
+.num+p {
+    font-weight: 200;
+    font-size: 10px;
+    color: var(--other-fnt-color);
+}
+
+.grandparent4 h2 {
+    color: var(--other-fnt-color);
+
+}
+
+
+.p {
+    text-align: center;
+    font-size: 10px;
+    font-weight: 200;
+    display: inline;
+    border-bottom: 1px solid var(--other-fnt-color);
+    color: var(--other-fnt-color);
+    padding-block-start: 4%;
+}
+
+/* ==================the page finish==================== */
+.grandparent5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 10%;
+    gap: 5vw;
+}
+
+.container_child {
+    display: flex;
+    gap: 2vw;
+    border-bottom: 1px solid var(--gray-t);
+    padding-block-start: 2%;
+}
+
+.container_child:last-child {
+    border-bottom: none;
+}
+
+.container_child .icon3 {
+    align-self: center;
+    padding-bottom: 10%;
+}
+
+.container_parent3 {
+    width: 30%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    padding-block: 2%;
+    padding-inline: 1%;
+}
+
+.container_image2 {
+    width: 35vw;
+    height: 45vh;
+    background-image: linear-gradient(to left bottom, var(--gray-t) 30%, var(--scondray-bak-color) 65%);
+
+}
+
+/* ==================i'm finish this page====================== */
+
+/* =====================footer============================= */
+
+
+.grandparent6 {
+    background-color: var(--gray-t);
+    padding-block-start: 8%;
+}
+
+.title2 {
+    text-align: center;
+    margin-inline: 25%;
+    width: 50%;
+}
+
+.title2 p {
+    color: var(--scondray-bak-color);
+    font-size: 10px;
+
+}
+
+/* =====================form============================= */
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+}
+
+input[type="text"] {
+    width: 25%;
+    height: 6Vh;
+    padding-inline-start: 3%;
+}
+
+input[type="submit"] {
+    width: 28%;
+    height: 6vh;
+    color: var(--other-fnt-color);
+    background-color: var(--scondray-fnt-color);
+    border: none;
+}
+
+form+p {
+    text-align: center;
+    color: var(--scondray-bak-color);
+    font-size: 10px;
+    margin-top: 1%;
+}
+
+.last {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: end;
+}
+
+ul {
+    display: flex;
+    gap: 2vw;
+}
+
+.cont {
+    padding-inline-start: 15%;
+    margin-top: 5%;
+}
+
+.cont p,
+li {
+    color: var(--scondray-bak-color);
+}
+.nam {
+    color: var(--scondray-fnt-color);
+    text-transform: lowercase;
+}
+
+.title2 , .space{
+    margin-bottom: 5vh;
+}
+
+
